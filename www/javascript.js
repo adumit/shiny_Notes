@@ -24,9 +24,9 @@ $(document).ready(function() {
     var id = $(this).attr('id');
     var content = $(this).text();
     $(this).replaceWith("<textArea class='editNoteText' id='" + id + "' rows='5'>" + content +"</textarea>");
-  });
+  })
   $(".note").on('dblclick', 'textArea.editNoteText', function() {
-    $('#noteTrace').val($(this).attr('id') + '∆' + ($(this).val())).toString();
+    $('#noteTrace').val($(this).attr('id') + 'DELTA' + ($(this).val())).toString();
     $('.editNoteTextOnBoard').click();
   });
 });
