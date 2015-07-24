@@ -265,7 +265,7 @@ shinyServer(function(input, output) {
   })
   
   editNoteTextOnBoard <- function(inputText) {
-    sepList = strsplit(inputText, "∆")
+    sepList = strsplit(inputText, "DELTA")
     BIDtoEdit = sepList[[1]][1]
     newText = sepList[[1]][2]
     noteID = noteBoardData$noteID[noteBoardData$BID == BIDtoEdit]
